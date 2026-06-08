@@ -27,3 +27,4 @@ alias vim='nvim'
 alias c='clear'
 alias reload='exec zsh'
 alias ports='lsof -iTCP -sTCP:LISTEN -n -P'
+
