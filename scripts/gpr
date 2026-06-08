@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Open a PR against `main` from the current branch, prefilling title+body from
+# the last commit message.
+set -euo pipefail
+BR=$(git symbolic-ref --short HEAD)
+if [[ "$BR" == "main" ]]; then
+  echo "cannot open a PR from main." >&2
+  exit 1
+fi
+TITLE=$(git log -1 --pretty=%s)
+BODY=$(git log -1 --pretty=%b)
+git push -u origin "$BR"
+gh pr create --base main --head "$BR" --title "$TITLE" --body "${BODY:-See commit message.}"

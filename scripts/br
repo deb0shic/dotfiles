@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Fuzzy-checkout a git branch across local + remotes.
+set -euo pipefail
+BR=$(git branch --all | grep -v HEAD | sed 's#remotes/[^/]*/##' | awk '{$1=$1};1' | sort -u | fzf --height 40% --reverse)
+[[ -z "$BR" ]] && exit 0
+git checkout "$BR"
