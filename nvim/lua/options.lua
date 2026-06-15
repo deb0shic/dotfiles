@@ -32,3 +32,4 @@ o.swapfile   = false
 o.backup     = false
 
 o.clipboard = "unnamedplus"
+
