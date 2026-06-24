@@ -29,3 +29,4 @@ cask "font-jetbrains-mono-nerd-font"
 cask "raycast"
 cask "ghostty"
 cask "orbstack"
+
