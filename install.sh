@@ -25,3 +25,4 @@ link "$DOTFILES/git/gitignore"      "$HOME/.gitignore_global"
 
 echo
 echo "Done. Backups (if any) in: $BACKUP"
+
