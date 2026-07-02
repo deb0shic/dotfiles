@@ -46,3 +46,4 @@ The script backs up any existing dotfiles into `~/.dotfiles-backup-<timestamp>` 
 ## License
 
 MIT
+
