@@ -48,3 +48,4 @@ source "$HOME/.dotfiles/zsh/functions.zsh"
 command -v direnv >/dev/null && eval "$(direnv hook zsh)"
 command -v fzf >/dev/null && source <(fzf --zsh 2>/dev/null || true)
 
+
